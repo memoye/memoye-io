@@ -1,5 +1,3 @@
-import { blurGradient1 } from './src/assets';
-
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -9,7 +7,7 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        'blurgradient': `url('../src/assets/backgrounds/vecteezy_abstract-gradient-blur-shape.png')`,
+        'blurgradient': `url('../src/assets/gradient-backgrounds/vecteezy_abstract-gradient-blur-shape.png')`,
         // 'workspace': "url('../src/assets/images/workspace-desktop-by-olena-bohovyk-unsplash.jpg')",
       }
     },

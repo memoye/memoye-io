@@ -55,9 +55,9 @@ export const NavBar = () => {
                     </div>
 
                     {/* logo */ }
-                    <Link to={ `/` } className="btn btn-ghost hover:bg-transparent p-0 text-xl hover:brightness-90 group">
+                    <Link to={ `/` } className="btn btn-ghost hover:bg-transparent p-0 text-xl hover:brightness-90">
                         <motion.figure
-                            className={ `max-w-[3rem] group-hover:animate-spin` }
+                            className={ `max-w-[3rem]` }
                             style={ { rotate: rotation, transitionDuration: 5 } }
                         >
                             <img src={ `/logo.svg` } alt="Memoye" />
@@ -73,10 +73,10 @@ export const NavBar = () => {
                         <li><NavLink to={ `/` } className={ NavLinkClassNames } >Home</NavLink></li>
                         <li><NavLink to={ `/about` } className={ NavLinkClassNames } >About</NavLink></li>
                         <li><NavLink to={ `/projects` } className={ NavLinkClassNames } >Projects</NavLink></li>
-                        <li className={ `relative group` }>
+                        <li className={ `relative` }>
                             <NavLink to={ `/blog` } className={ NavLinkClassNames + ' font-bold border border-base-content border-opacity-10' } >
                                 Blog
-                                <div className="opacity-0 group-hover:opacity-100 transition-opacity absolute left-3/4 text-[8px] top-1 w-max badge badge-xs badge-warning gap-2">
+                                <div className="transition-opacity absolute left-3/4 text-[8px] top-1 w-max badge badge-xs badge-warning gap-2">
                                     Soon!
                                 </div>
                             </NavLink>
@@ -116,5 +116,5 @@ export const NavBar = () => {
 }
 
 function NavLinkClassNames({ isActive }) {
-    return (`hover:bg-transparent hover:text-accent ${isActive && 'text-info'}`)
+    return (`hover:bg-transparent hover:text-info text-[1rem] font-medium ${isActive && 'text-accent'}`)
 }
