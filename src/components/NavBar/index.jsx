@@ -57,7 +57,7 @@ export const NavBar = () => {
                     {/* logo */ }
                     <Link to={ `/` } className="btn btn-ghost hover:bg-transparent p-0 text-xl hover:brightness-90 group">
                         <motion.figure
-                            className={ `max-w-[3rem] group-active:animate-spin` }
+                            className={ `max-w-[3rem] group-hover:animate-spin` }
                             style={ { rotate: rotation, transitionDuration: 5 } }
                         >
                             <img src={ `/logo.svg` } alt="Memoye" />
