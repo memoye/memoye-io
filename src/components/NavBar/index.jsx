@@ -19,7 +19,7 @@ export const NavBar = () => {
     }, [isdark])
 
     return (
-        <div className={ `fixed w-full bg-opacity-75 bg-base-100 backdrop-blur-sm z-30` }>
+        <div className={ `fixed w-full bg-opacity-60 bg-base-100 backdrop-blur-sm z-30` }>
             <div className="navbar  max-w-6xl mx-auto ">
                 <div className="navbar-start">
                     <div className="dropdown">

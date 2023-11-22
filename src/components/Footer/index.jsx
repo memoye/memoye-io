@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 
 export const Footer = () => {
     return (
-        <div className={ `z-20` }>
+        <div className={ `z-20 backdrop-grayscale grayscale bg-base-100 bg-opacity-10` }>
             <footer className="footer p-10 text-base-content max-w-6xl  mx-auto">
                 <nav>
                     <header className="footer-title">General</header>

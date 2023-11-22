@@ -12,10 +12,12 @@ function App() {
   });
 
   return (
-    <div className={ `flex flex-col min-h-[100svh] relative` }>
+    <div className={ `flex flex-col min-h-[100svh] relative overflow-hidden` }>
       <NavBar />
 
-      <div className={ `absolute inset-0 bg-blurgradient bg-contain bg-no-repeat bg-right-bottom opacity-30 z-0` } />
+      <div className={ `absolute w-1/2 h-[40rem] top-0 left-8 bg-blurgradient2 bg-cover bg-no-repeat bg-center opacity-30 z-0` } />
+      <div className={ `absolute w-1/2 h-[30rem] top-[700px] right-10 bg-blurgradient3 bg-contain bg-no-repeat bg-center opacity-30 z-0` } />
+
 
       <AnimatePresence>
         <div className={ `flex-auto max-w-6xl mx-auto w-full px-6 pt-20 z-20 min-h-screen` }>
