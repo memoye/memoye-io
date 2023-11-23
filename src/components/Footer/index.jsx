@@ -1,8 +1,9 @@
+import { TbBrandGithub, TbBrandInstagram, TbBrandLinkedin, TbBrandTwitter, TbBrandWhatsapp, TbBrandX } from "react-icons/tb"
 import { Link } from "react-router-dom"
 
 export const Footer = () => {
     return (
-        <div className={ `z-20 backdrop-grayscale grayscale bg-base-100 bg-opacity-10` }>
+        <div className={ `z-20 backdrop-grayscale backdrop-blur-md bg-base-100 bg-opacity-10` }>
             <footer className="footer p-10 text-base-content max-w-6xl  mx-auto">
                 <nav>
                     <header className="footer-title">General</header>
@@ -43,10 +44,41 @@ export const Footer = () => {
                         </label>
                         <div className="join">
                             <input type="text" placeholder="username@site.com" className="input input-bordered join-item" />
-                            <button className="btn btn-primary join-item">Subscribe</button>
+                            <button className="btn btn-accent text-accent hover:text-neutral-content join-item">Subscribe</button>
                         </div>
                     </fieldset>
                 </form>
+                <nav>
+                    <header className="footer-title">Social</header>
+                    <ul className="grid grid-flow-col gap-4">
+                        <li className="lg:tooltip lg:tooltip-bottom" data-tip="@memoye">
+                            <a href="#" target="_blank">
+                                <TbBrandGithub size={ 24 } />
+                            </a>
+                        </li>
+                        <li className="lg:tooltip lg:tooltip-bottom" data-tip="@memoye_io">
+                            <a href="https://twitter.com/memoye_io" target="_blank">
+                                <TbBrandX size={ 24 } />
+                            </a>
+                        </li>
+                        <li className="lg:tooltip lg:tooltip-bottom" data-tip="Brown Memoye">
+                            <a href="https://www.linkedin.com/in/b-me" target="_blank">
+                                <TbBrandLinkedin size={ 24 } />
+                            </a>
+                        </li>
+                        <li className="lg:tooltip lg:tooltip-bottom" data-tip="Send me a message on WhatsApp.">
+                            <a href="https://wa.link/42qswy" target="_blank">
+                                <TbBrandWhatsapp size={ 24 } />
+                            </a>
+                        </li>
+                        {/* <li className="lg:tooltip lg:tooltip-bottom" data-tip="">
+                            <a href="tel:+2349076181828" target="_blank">
+                                <TbBrandWhatsapp size={ 24 } />
+                            </a>
+                        </li> */}
+                        {/* <a href="#" target="_blank"> <TbBrandInstagram size={ 24 } /> </a> */ }
+                    </ul>
+                </nav>
             </footer>
         </div>
     )
