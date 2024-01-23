@@ -66,7 +66,7 @@ export const Footer = () => {
                                 <TbBrandLinkedin size={ 24 } />
                             </a>
                         </li>
-                        <li className="lg:tooltip lg:tooltip-bottom" data-tip="Send me a message on WhatsApp.">
+                        <li className="lg:tooltip lg:tooltip-bottom" data-tip="Say 'Hi' on WhatsApp.">
                             <a href="https://wa.link/42qswy" target="_blank">
                                 <TbBrandWhatsapp size={ 24 } />
                             </a>
@@ -75,7 +75,8 @@ export const Footer = () => {
                             <a href="tel:+2349076181828" target="_blank">
                                 <TbBrandWhatsapp size={ 24 } />
                             </a>
-                        </li> */}
+                        </li> 
+                        */}
                         {/* <a href="#" target="_blank"> <TbBrandInstagram size={ 24 } /> </a> */ }
                     </ul>
                 </nav>
